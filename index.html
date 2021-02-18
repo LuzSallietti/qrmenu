@@ -9,7 +9,7 @@
 </head>
 <body class="container box-border relative">
     <!-- dinamic div for each category-->
-    <section class="absolute h-full bottom-0 bg-white w-screen z-50 transition-all duration-500 ease" id="categoryProducts">
+    <section class="absolute h-full bottom-0 bg-white w-screen z-50 transition-all duration-500 ease invisible hidden" id="categoryProducts">
         <svg id="closeCategoryDetail"class="w-8 h-8 absolute top-6 right-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
         <h1 class="text-center mt-10 text-3xl font-semibold mb-4">Postres</h1>
@@ -76,13 +76,17 @@
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
         </div>
         <!--WI-FI data-->
-    <div class="w-6/12 mx-auto bg-red-900 shadow absolute bottom-0 p-4 rounded-5 invisible hidden transition-all duration-500 ease" id="wifiData">        
+    <div class="z-50 w-6/12 mx-auto bg-red-900 shadow absolute bottom-0 p-2 rounded-5 invisible hidden transition-all duration-500 ease" id="wifiData">        
         <p class="text-white mb-6 text-center">Conexión Wi-Fi</p>
-
-        <svg class="w-6 h-6 text-white inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
-        <p class="text-white text-xl inline py-2">Usuario Wi-Fi</p>
-        <svg class="w-6 h-6 text-white inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg>
-        <p class="text-white text-xl inline py-2">Password123</p>
+        <div class="w-full">
+            <svg class="w-6 h-6 text-white inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
+            <p class="text-white text-xl inline py-2">Usuario Wi-Fi</p>
+        </div>
+        <div class="w-full">
+            <svg class="w-6 h-6 text-white inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg>
+            <p class="text-white text-xl inline py-2">Password123</p>
+        </div>       
+        
         <button class="w-11/12 p-2 mx-auto my-6 bg-white text-red-900" id="wifiConfirm">Aceptar</button>
     </div>
     </footer>
