@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="0; url=https://qrmenu.github.io/public/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">    
+    <title>Menú Digital</title>
+</head>
+<body class="container box-border">
+    <!-- dinamic div for each category-->
+    <section class="absolute top-0 bg-white h-screen w-screen z-50 invisible hidden transition-all duration-500 ease" id="categoryProducts">
+        <svg id="closeCategoryDetail"class="w-8 h-8 absolute top-6 right-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <h1 class="text-center mt-10 text-3xl font-semibold mb-4">Postres</h1>
+        <h3 class="text-center w-6/12 mx-auto mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <!-- if there are subcategories use this div-->
+        <div class="w-11/12 mx-auto bg-gray-200 text-center">
+            <h3 class="text-xl font-semibold py-4">Subcategoría</h3>
+        </div>
+        <!--product detail-->
+        <div class="w-11/12 rounded-5 shadow mx-auto my-4 flex flex-row flex-wrap relative">
+            <h4 class="font-semibold text-lg w-9/12 p-2">Chocotorta</h4>
+            <div class="w-3/12 h-full border absolute right-0">
+                <img src="./img/img-bedford-bizarre.jpg" class="h-full object-cover">
+            </div>
+            <p class="p-2 w-9/12 pb-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in quae assumenda nulla.</p>
+            
+                
+            <div class="w-9/12 pr-2 my-4 flex flex-row justify-around items-center">
+                <p class="font-semibold w-3/12 px-2">$570</p>
+                <div class="h-8 w-8">
+                    <img src="./img/vegetarian.png" class="w-full h-full">
+                </div>
+                <div class="h-8 w-8">
+                    <img src="./img/vegano.png" class="h-full w-full">
+                </div>
+                <div class="h-8 w-8">
+                    <img src="./img/sugarfree.png" class="h-full w-full">
+                </div>
+                <div class="h-8 w-8">
+                    <img src="./img/glutenfree.png" class="h-full w-full">
+                </div>
+                <div class="h-8 w-8">
+                    <img src="./img/dairyfree.png" class="h-full w-full">
+                </div>                
+            </div>      
+            </div>
+                  
+        </div>       
+
+    </section>
+    <!--hero img and logo-->
+    <header class="w-100 h-60 rounded-b-25 bg-hero-image bg-cover flex justify-center relative">
+        <div class="w-32 h-32 rounded-full border-4 bg-logo-image bg-cover absolute -bottom-10">                       
+        </div>      
+    </header>
+    <main class="relative top-10">
+        <h1 class="font-semibold text-center text-2xl my-6">Parrilla La Curva</h1>
+        <!-- menu categories-->
+        <section class="mx-4 border shadow border-4 rounded-b-5 h-auto pb-4 mb-4" id="exampleCategory" >            
+            <img class="object-cover h-28 w-full" src="./img/img-bedford-bizarre.jpg" alt="imagen de categoría">
+            <h2 class="w-full font-semibold px-3 pb-1 pt-2 text-lg">Entradas</h2>
+            <p class="px-3">Nuestras opciones para que empieces a disfrutar.</p>
+        </section>
+
+        <section class="mx-4 border shadow border-4 rounded-b-5 h-auto pb-4 mb-4" >            
+            <img class="object-cover h-28 w-full" src="./img/img-bedford-bizarre.jpg" alt="imagen de categoría">
+            <h2 class="w-full font-semibold px-3 pb-1 pt-2 text-lg">Entradas</h2>
+            <p class="px-3">Nuestras opciones para que empieces a disfrutar.</p>
+        </section>     
+    </main>
+    
+    <footer class="bg-red-900 h-12 relative top-10 flex justify-center items-center">
+        <div class="h-6 w-6 text-white" id="wifiBtn">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
+        </div>
+        <!--WI-FI data-->
+    <div class="w-6/12 mx-auto bg-red-900 shadow absolute bottom-0 p-4 rounded-5 invisible hidden transition-all duration-500 ease" id="wifiData">        
+        <p class="text-white mb-6 text-center">Conexión Wi-Fi</p>
+
+        <svg class="w-6 h-6 text-white inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
+        <p class="text-white text-xl inline py-2">Usuario Wi-Fi</p>
+        <svg class="w-6 h-6 text-white inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg>
+        <p class="text-white text-xl inline py-2">Password123</p>
+        <button class="w-11/12 p-2 mx-auto my-6 bg-white text-red-900" id="wifiConfirm">Aceptar</button>
+    </div>
+    </footer>
+    <!--js-->    
+<script src="./js/display_transition.js"></script>
+</body>
+</html>
